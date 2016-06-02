@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Structura div</title>
+	<link rel="stylesheet" type="text/css" href="general.css">
+    <style type="text/css">
+
+	ul{
+		list-style-type:none;
+		margin:0px;
+		padding: 0px;
+		border-left-width: 1px;
+		border-left-style:none;
+		border-left-color: #ccc; 
+		overflow:hidden;
+	}
+	li{
+		display: inline;
+	}
+	a{
+		font-family: arial,Helvetica,Sans-serif;
+		color: #000;
+		text-decoration: none;
+		font-size: 0.9em;
+		display:block;
+		float: right;
+		padding: 6px;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #ccc;
+		background-color: #eaeaea;
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: #ccc;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: #ccc;
+	}
+	a:hover{
+		color: #fff;
+		background-color: #666;
+	}	
+	.clear{
+		clear: both;
+	}	
+    </style>
+</head>
+
+<body>
+<div class="caja" >
+	<div class="cabecera">
+	 <p>Contenido de la cabecera</p>
+	</div>
+<div class="menu">
+		<nav>
+
+            <ul id="BOX">
+	<li><a href="#" class="welcome">Welcome</a></li>
+	<li><a href="#" class="featured">Featured</a></li>
+	<li><a href="#" class="people">People</a></li>
+	<li><a href="#" class="music">Music</a></li>
+	<li><a href="#" class="mixes">Mixes </a></li>
+	<li><a href="#" class="videos">Videos</a></li>
+	<li><a href="#" class="radio">Radio</a></li>
+</ul>
+</nav>
+	</div>
+	<div class="contenido">
+        <table>
+        <tr>
+        <td> <label for="usuario">usuario :
+            </label></td>
+            <td> <input type="text" id="txtusr"
+                        placeholder="usuario" autofocus>
+            </td>
+        </tr>
+        <tr>
+        <td><label for="password">password :
+            </label></td>
+            <td><input type="password"
+                       id="txtpwd"></td>
+        </tr>
+        <tr>
+        <td><input type="button"
+                   value="aceptar" id="btnaceptar">
+            </td>
+        </tr>
+        </table>
+		
+	</div>
+	<div class="destacados">
+	area de destacado y relacionado
+	</div><div class="pie">
+		pie de pagina
+	</div>
+    <div class="contenido">
+        <script src = "jquery.js" ></script></div>
+    <script>
+    $(document).ready(function(){
+      $("#btnaceptar").click(function(e){
+        var usuario=$("#txtusr").val();
+          var pssw = $("#txtpwd").val();
+       alert (usuario+" Hola "+pssw);
+                      });
+    });
+    
+    </script>
+</div> 
+</body>
+</html>
